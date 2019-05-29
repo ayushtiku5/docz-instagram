@@ -1,0 +1,35 @@
+---
+name: Buttons
+menu: Components
+route: /Components/Buttons
+---
+
+# Buttons
+
+import {Props, Playground} from 'docz'
+import {Button} from './index';
+
+<hr style={{border: '1px solid'}}/>
+
+## Properties
+
+<Props of = {Button} />
+
+## Normal button
+
+
+<Playground style={{display: 'flex', justifyContent: 'center'}}>
+<div style={{height: '50px', width: '70px'}}>
+    <Button content = "click" type = "button"  />
+</div>
+</Playground>
+
+<hr />
+
+## Submit button
+<Playground style={{display: 'flex', justifyContent: 'center'}}>
+<div style={{height: '50px', width: '70px'}}>
+    <Button content = "submit" type = "submit"  />
+</div>
+</Playground>
+

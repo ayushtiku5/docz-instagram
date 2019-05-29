@@ -1,0 +1,37 @@
+---
+name: Form
+menu: Components
+route: /Components/Form
+---
+
+# Forms
+
+import Form from './src/components/Form';
+import {Props, Playground} from 'docz'
+
+<hr style={{border: '1px solid'}}/>
+
+## Login Form
+<Playground style={{display: 'flex', justifyContent: 'center'}}>
+<div style={{height: '315px', width: '350px', border: '1px solid', backgroundColor: 'white'}}>
+    <Form credentials={['username','password']} submitContent="Login" />
+</div>
+</Playground>
+
+<hr />
+
+## Different fields
+<Playground style={{display: 'flex', justifyContent: 'center'}}>
+<div style={{height: '315px', width: '350px', border: '1px solid', backgroundColor: 'white'}}>
+    <Form credentials={['email']} submitContent="Login" />
+</div>
+</Playground>
+
+<hr />
+
+## With error message
+<Playground style={{display: 'flex', justifyContent: 'center'}}>
+<div style={{height: '315px', width: '350px', border: '1px solid', backgroundColor: 'white'}}>
+    <Form credentials={['username','password']} submitContent="Login" errorMessage="User not found" />
+</div>
+</Playground>

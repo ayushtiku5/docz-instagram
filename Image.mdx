@@ -1,0 +1,23 @@
+---
+name: Images
+menu: Components
+route: /Components/Image
+---
+
+# Images
+import Image from './src/components/Image';
+import {Props, Playground} from 'docz'
+
+<hr style={{border: '1px solid'}}/>
+
+## Square Image
+<Playground style={{display: 'flex', justifyContent: 'center'}}>
+<Image isRounded={false} url="https://pbs.twimg.com/profile_images/612008607152877572/OzTVFN9K_400x400.jpg" alt="profile picture" />
+</Playground>
+
+<hr />
+
+## Rounded Image
+<Playground style={{display: 'flex', justifyContent: 'center'}}>
+<Image isRounded={true} url="https://pbs.twimg.com/profile_images/612008607152877572/OzTVFN9K_400x400.jpg" alt="profile picture" />
+</Playground>
