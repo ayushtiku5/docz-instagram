@@ -35,6 +35,6 @@
   "devDependencies": {
     "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
-    "webpack": "^4.32.2"
+    "webpack": "^5.94.0"
   }
 }
